@@ -5,7 +5,7 @@ app_name = 'api_v1_tasks'
 
 urlpatterns = [
     path('', task_list_create, name='task-list-create'),
-    path('<uuid:task_id>/', task_detail, name='task-detail'),
     path('dashboard-count/', dashboard_count, name='dashboard_count'),
+    path('<uuid:task_id>/', task_detail, name='task-detail'),
     
 ] 
